@@ -1,12 +1,8 @@
 input.onButtonPressed(Button.A, function () {
-    for (let index = 0; index < 4; index++) {
-        cuteBot.backforward()
-    }
+    cuteBot.moveTime(cuteBot.Direction.backward, 100, 10)
 })
 input.onButtonPressed(Button.B, function () {
-    for (let index = 0; index < 4; index++) {
-        cuteBot.forward()
-    }
+    cuteBot.moveTime(cuteBot.Direction.forward, 100, 10)
 })
 basic.forever(function () {
     basic.showLeds(`
